@@ -466,6 +466,51 @@
     .details-columns{ grid-template-columns: 1fr; }
     .schedule-table td, .schedule-table th{ font-size: 12px; }
   }
+
+  /* ===== Mobile ===== */
+  @media (max-width: 640px){
+    body{ padding: 20px 12px 40px; }
+    .lang-tabs{ justify-content: center; margin-bottom: 12px; }
+    .banner{ margin-bottom: 28px; padding: 20px 18px; }
+    .banner-title{ font-size: 34px; letter-spacing: 2px; }
+    .banner-venue{ font-size: 18px; letter-spacing: 3px; }
+    .top-row{ flex-direction: row; align-items: flex-end; justify-content: space-between; gap: 12px; margin-bottom: 22px; }
+    .precio-title{ font-size: 36px; letter-spacing: 3px; }
+    .producto-nombre{ font-size: 24px; }
+    .stats-row{ grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 20px; }
+    .stat-box{ padding: 12px 8px; text-align: center; display: flex; flex-direction: column; justify-content: center; }
+    .stat-label{ font-size: 9px; letter-spacing: 0.8px; margin-bottom: 6px; }
+    .stat-value{ font-size: 22px; }
+    .stat-small{ display: block; font-size: 10px; margin-top: 4px; }
+    .stat-sub{ font-size: 11px; margin-top: 4px; }
+    .option-block{ margin-bottom: 44px; }
+    .option-heading{ margin-bottom: 14px; }
+    .option-heading .option-name{ font-size: 20px; }
+    .detalles-box, .detalles-box.compact{ padding: 20px 16px; }
+    .detalles-label{ margin-bottom: 20px; font-size: 12px; }
+    .details-columns{ gap: 14px; }
+    .line-item{ font-size: 14px; }
+    .line-item .amount{ font-size: 18px; }
+    .amount.total-amount{ font-size: 26px; }
+    .notes{ margin-top: 20px; }
+    .note{ font-size: 12px; padding-left: 12px; }
+    .schedule-table th{ font-size: 11px; padding-bottom: 10px; }
+    .schedule-table td{ padding: 14px 6px 14px 0; }
+    .schedule-table .pay-label{ font-size: 14px; }
+    .schedule-table .pay-season{ font-size: 11px; }
+    .schedule-table td:nth-child(3), .schedule-table td:nth-child(4){ font-size: 15px; }
+    .due-now{ padding: 12px 14px; }
+    .due-now-row{ gap: 10px; }
+    .due-now-label{ font-size: 12px; letter-spacing: 0.5px; }
+    .due-now-amount{ font-size: 22px; }
+    .due-now-sub{ font-size: 12px; }
+  }
+  @media (max-width: 380px){
+    .stat-value{ font-size: 18px; }
+    .stat-label{ font-size: 8px; letter-spacing: 0.5px; }
+    .banner-title{ font-size: 28px; }
+    .precio-title{ font-size: 30px; }
+  }
 </style>
 </head>
 <body>
